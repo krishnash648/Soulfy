@@ -15,7 +15,7 @@ const Discover = () => {
   if (isFetching) return <Loader title="Loading songs..." />;
   if (error) return <Error />;
 
-  console.log('Sample song:', data?.[0]); // For debugging
+  console.log('Sample song:', data?.[0]);
 
   return (
     <div className="flex flex-col">

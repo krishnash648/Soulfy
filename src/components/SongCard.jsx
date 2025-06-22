@@ -35,7 +35,7 @@ const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
             song={song}
             handlePause={handlePauseClick}
             handlePlay={handlePlayClick}
-            isActive={isActive} // Pass this to PlayPause for smarter control
+            isActive={isActive} 
           />
         </div>
         <img alt="song_img" src={artworkUrl} className="w-full h-full rounded-lg" />

@@ -8,11 +8,10 @@ import { useGetSongDetailsQuery, useGetSongRelatedQuery } from '../redux/service
 
 const SongDetails = () => {
   const dispatch = useDispatch();
-  const { songid } = useParams(); // ✅ Only songid available from route
+  const { songid } = useParams(); 
 
   const { activeSong, isPlaying } = useSelector((state) => state.player);
 
-  // ✅ API Calls
   const {
     data: songData,
     isFetching: isFetchingSongDetails,
@@ -25,18 +24,15 @@ const SongDetails = () => {
     error: relatedError,
   } = useGetSongRelatedQuery({ songid });
 
-  // ✅ Show loader while fetching
   if (isFetchingSongDetails && isFetchingRelatedSongs) {
     return <Loader title="Searching song details..." />;
   }
 
-  // ✅ Handle errors
   if (songError || relatedError) {
     console.error('SongDetails Error:', songError || relatedError);
     return <Error />;
   }
 
-  // ✅ Play/pause handlers
   const handlePauseClick = () => {
     dispatch(playPause(false));
   };
@@ -46,10 +42,8 @@ const SongDetails = () => {
     dispatch(playPause(true));
   };
 
-  // ✅ Get artist ID from API response (since route doesn't have it)
   const artistId = songData?.artists?.[0]?.adamid || '';
 
-  // ✅ Get lyrics section safely
   const lyricsSection = songData?.sections?.find((section) => section.type === 'LYRICS');
 
   return (
