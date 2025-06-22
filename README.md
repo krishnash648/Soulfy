@@ -1,5 +1,9 @@
 # Soundify 🎵🔥
 
+![Work in Progress](https://img.shields.io/badge/status-in--progress-yellow)
+
+⚠️ **Work In Progress:** This project is currently under active development. Many features are still being built and refined. Expect missing functionality and occasional bugs. Stay tuned for updates!
+
 Welcome to **Soundify**, a sexy React.js Music Application 🎶 built for smooth streaming, clean UI, and maximum vibes.  
 Inspired by Spotify, but with a personal twist.
 
@@ -26,13 +30,14 @@ Crafted by **Krishna**, this project is all about exploring music with elegance,
 
 ---
 
-## 🚀 Upcoming Features
+## 🚀 Upcoming Features  
 We’re still building more magic! Coming soon:
-- 📝 User Authentication
-- ❤️ Playlist Creation
-- ⏯️ Queue Management
-- 🌈 Animated Gradient Backgrounds
-- 🥁 More Soundify-exclusive visual features
+
+- 📝 User Authentication  
+- ❤️ Playlist Creation  
+- ⏯️ Queue Management  
+- 🌈 Animated Gradient Backgrounds  
+- 🥁 More Soundify-exclusive visual features  
 
 Stay tuned, more features dropping soon! 🎛️🔥
 
@@ -48,7 +53,7 @@ Stay tuned, more features dropping soon! 🎛️🔥
 
 ---
 
-## 💻 Getting Started
+## 💻 Getting Started  
 Wanna jam on your local machine? Let’s vibe 👇
 
 ```bash
