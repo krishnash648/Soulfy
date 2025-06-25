@@ -53,7 +53,7 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div className="relative sm:px-12 px-8 w-full flex items-center justify-between">
+    <div className="relative sm:px-12 px-4 w-full flex items-center justify-between bg-gradient-to-br from-white/20 to-[#23272a]/80 backdrop-blur-2xl shadow-2xl rounded-t-3xl animate-slideup transition-all duration-300">
       <Track isPlaying={isPlaying} isActive={isActive} activeSong={activeSong} />
       <div className="flex-1 flex flex-col items-center justify-center">
         <Controls

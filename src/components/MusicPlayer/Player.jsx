@@ -1,5 +1,14 @@
 import React, { useRef, useEffect } from 'react';
 
+const getAudioUrl = (song) => {
+  return (
+    song?.attributes?.previews?.[0]?.url || // ShazamCore/Apple Music
+    song?.preview || // Deezer
+    song?.hub?.actions?.[1]?.uri || // fallback (old logic)
+    ''
+  );
+};
+
 const Player = ({ activeSong, isPlaying, volume, seekTime, onEnded, onTimeUpdate, onLoadedData, repeat }) => {
   const ref = useRef(null);
   if (ref.current) {
@@ -19,7 +28,7 @@ const Player = ({ activeSong, isPlaying, volume, seekTime, onEnded, onTimeUpdate
 
   return (
     <audio
-      src={activeSong?.hub?.actions[1]?.uri}
+      src={getAudioUrl(activeSong)}
       ref={ref}
       loop={repeat}
       onEnded={onEnded}

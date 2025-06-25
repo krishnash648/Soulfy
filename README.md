@@ -1,87 +1,90 @@
-# Soundify 🎵🔥
+# Soulfy 🎵🔥
 
-![Work in Progress](https://img.shields.io/badge/status-in--progress-yellow)
-
-⚠️ **Work In Progress:** This project is currently under active development. Many features are still being built and refined. Expect missing functionality and occasional bugs. Stay tuned for updates!
-
-Welcome to **Soundify**, a sexy React.js Music Application 🎶 built for smooth streaming, clean UI, and maximum vibes.  
+Welcome to **Soulfy**, a modern React.js Music Application for smooth streaming, clean UI, and maximum vibes. 
 Inspired by Spotify, but with a personal twist.
 
 Crafted by **Krishna**, this project is all about exploring music with elegance, performance, and fun.
 
 ---
 
-## 🌐 Live Demo  
-👉 Coming Soon! Stay tuned for the 🔥 drop!
+## Live Demo
+
+**[Live Demo Coming Soon](#)**
+
+> **Note:** If you are unable to see music components or data, please use your own ShazamCore API key in `proxy-server.js`.
 
 ---
 
-## ✨ Current Features
+## Features
 
-- 🏠 **Discover Page** — Your gateway to trending tracks
-- 📊 **Top Charts** — See what’s popping worldwide
-- 🎤 **Top Artists** — Explore your favorite music creators
-- ▶️ **Music Player** — Smooth, animated, and responsive player with play/pause and navigation
-- 💫 **Redux Integration** — Seamless state management for playback control
-- ⚙️ **API Integration** — Real-time music data from ShazamCore API
-- 📱 **Mobile Responsive** — Perfect vibes on every device
-- 🔥 **Sexy Sidebar** — Custom graffiti-style logo and aesthetic navigation
-- 🌗 **Dark Theme** — Modern, slick design with deep gradients
-
----
-
-## 🚀 Upcoming Features  
-We’re still building more magic! Coming soon:
-
-- 📝 User Authentication  
-- ❤️ Playlist Creation  
-- ⏯️ Queue Management  
-- 🌈 Animated Gradient Backgrounds  
-- 🥁 More Soundify-exclusive visual features  
-
-Stay tuned, more features dropping soon! 🎛️🔥
+- Discover Page — Your gateway to trending tracks
+- Top Charts — See what's popping worldwide
+- Top Artists — Explore your favorite music creators
+- Music Player — Smooth, animated, and responsive player with play/pause, next/prev, shuffle, repeat, and volume controls
+- Redux Integration — Seamless state management for playback control
+- API Integration — Real-time music data from ShazamCore API (via local proxy) and Deezer API (for search, genres, and favorites)
+- Genre Browsing — Browse and play songs by genre with a beautiful, interactive UI
+- Favorites Playlist — Add/remove any song to your personal favorites playlist (stored in your browser)
+- Login/Logout & Skip Demo — Simple authentication gate with demo credentials and skip option
+- Dark Theme — Modern, slick design with deep gradients for sidebar and navbar
+- Mobile Responsive — Perfect vibes on every device
+- Custom Sidebar — Unique logo and aesthetic navigation
 
 ---
 
-## 🛠️ Built With
-- ⚛️ React.js  
-- 🎨 Tailwind CSS  
-- 🌍 Redux Toolkit & RTK Query  
-- 🎵 ShazamCore API  
-- 🔥 Vite  
-- 🎧 React Icons  
+## API & Proxy Setup
+
+- Uses [ShazamCore API](https://rapidapi.com/tipsters/api/shazam-core) via a local Express proxy server to avoid CORS issues.
+- Uses [Deezer API](https://developers.deezer.com/api) for genre browsing, search, and favorites (no API key required).
+- The free RapidAPI plan has a monthly quota. If you exceed it, the app will show an error until the quota resets or you upgrade your plan.
 
 ---
 
-## 💻 Getting Started  
-Wanna jam on your local machine? Let’s vibe 👇
+## Built With
+- React.js  
+- Tailwind CSS  
+- Redux Toolkit & RTK Query  
+- ShazamCore API & Deezer API  
+- Vite  
+- React Icons  
+- Express (for proxy server)
+
+---
+
+## Getting Started  
 
 ```bash
-# 1️⃣ Clone the repo
+# Clone the repo
 git clone https://github.com/krishnash648/Soundify.git
 
-# 2️⃣ Enter the project directory
+# Enter the project directory
 cd Soundify
 
-# 3️⃣ Install the dependencies
+# Install the dependencies
 npm install
 
-# 4️⃣ Start the development server
+# Start the proxy server (in a separate terminal)
+node proxy-server.js
+
+# Start the development server
 npm run dev
-🔗 Open your browser at http://localhost:3000 to hear the music.
 
-🤝 Contributing
-Pull requests are welcome!
-If you’ve got feature ideas, UI upgrades, or just wanna jam, fork the repo, create your own branch, and submit a PR.
-Let’s build Soundify together, track by track. 🎼
+Open your browser at http://localhost:3000 to hear the music.
+```
 
-📬 Contact Me
-📧 Email: sharmakrishna1605@gmail.com
+---
 
-🐙 GitHub: krishnash648
+## How to Use
+- Browse by Genre: Go to the "Genres" page from the sidebar and explore music by your favorite genres.
+- Add to Favorites: Click the heart icon on any song card to add/remove it from your personal favorites playlist.
+- View Favorites: Access all your favorited songs from the "Favorites" page in the sidebar.
 
-🐦 Twitter: @ipriyaaa
+---
 
-📸 Instagram: @priyxhaa
+## Contact
+- Email: sharmakrishna1605@gmail.com
+- GitHub: krishnash648
+- Twitter: @ipriyaaa
+- Instagram: @priyxhaa
 
-Built with ❤️, 🎧, and a whole lotta front-end energy by Krishna.
+Built with passion and a love for music by Krishna.

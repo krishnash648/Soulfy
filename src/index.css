@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #0a0a0a;
+}
+
+[data-theme='dark'] {
+  --bg-main: #0a0a0a;
+  --bg-card: #18181f;
+  --text-main: #fff;
+  --text-secondary: #ccc;
+  --accent: #3a6cf6;
+}
+[data-theme='light'] {
+  --bg-main: #f5f7fa;
+  --bg-card: #fff;
+  --text-main: #18181f;
+  --text-secondary: #555;
+  --accent: #3a6cf6;
+}
+
+body, html {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* Example usage for cards and text */
+.bg-main { background: var(--bg-main); }
+.bg-card { background: var(--bg-card); }
+.text-main { color: var(--text-main); }
+.text-secondary { color: var(--text-secondary); }
+.text-accent { color: var(--accent); }
+.bg-accent { background: var(--accent); }
+
 .active {
   @apply text-cyan-500;
 }

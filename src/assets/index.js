@@ -1,5 +1,5 @@
 import loader from './loader.svg';
-import logo from './spotifyy.png';
+import logo from './spotifyyy.png';
 
 export {
   logo,
