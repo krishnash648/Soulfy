@@ -17,14 +17,11 @@ Crafted by **Krishna**, this project is all about exploring music with elegance,
 
 ## Screenshots
 
-### Home / Discover Page
-![Home Screenshot](screenshots/home.png)
-
 ### Login Page
-![Login Screenshot](src/assets/screenshot 1.PNG)
+![Login Screenshot](src/assets/screenshot_1.png)
 
 ### Player & Top Charts
-![Player Screenshot](src/assets/screenshot 2.PNG)
+![Player Screenshot](src/assets/screenshot_2.png)
 
 ---
 
