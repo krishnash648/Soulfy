@@ -9,9 +9,22 @@ Crafted by **Krishna**, this project is all about exploring music with elegance,
 
 ## Live Demo
 
-**[Live Demo Coming Soon](#)**
+[https://soulfy.vercel.app/](https://soulfy.vercel.app/)
 
 > **Note:** If you are unable to see music components or data, please use your own ShazamCore API key in `proxy-server.js`.
+
+---
+
+## Screenshots
+
+### Home / Discover Page
+![Home Screenshot](screenshots/home.png)
+
+### Login Page
+![Login Screenshot](src/assets/screenshot 1.PNG)
+
+### Player & Top Charts
+![Player Screenshot](src/assets/screenshot 2.PNG)
 
 ---
 
@@ -22,7 +35,7 @@ Crafted by **Krishna**, this project is all about exploring music with elegance,
 - Top Artists — Explore your favorite music creators
 - Music Player — Smooth, animated, and responsive player with play/pause, next/prev, shuffle, repeat, and volume controls
 - Redux Integration — Seamless state management for playback control
-- API Integration — Real-time music data from ShazamCore API (via local proxy) and Deezer API (for search, genres, and favorites)
+- API Integration — Real-time music data from ShazamCore API (via local proxy)
 - Genre Browsing — Browse and play songs by genre with a beautiful, interactive UI
 - Favorites Playlist — Add/remove any song to your personal favorites playlist (stored in your browser)
 - Login/Logout & Skip Demo — Simple authentication gate with demo credentials and skip option
@@ -35,7 +48,6 @@ Crafted by **Krishna**, this project is all about exploring music with elegance,
 ## API & Proxy Setup
 
 - Uses [ShazamCore API](https://rapidapi.com/tipsters/api/shazam-core) via a local Express proxy server to avoid CORS issues.
-- Uses [Deezer API](https://developers.deezer.com/api) for genre browsing, search, and favorites (no API key required).
 - The free RapidAPI plan has a monthly quota. If you exceed it, the app will show an error until the quota resets or you upgrade your plan.
 
 ---
@@ -44,7 +56,7 @@ Crafted by **Krishna**, this project is all about exploring music with elegance,
 - React.js  
 - Tailwind CSS  
 - Redux Toolkit & RTK Query  
-- ShazamCore API & Deezer API  
+- ShazamCore API  
 - Vite  
 - React Icons  
 - Express (for proxy server)
