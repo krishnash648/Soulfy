@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 app.get('/api/shazam', async (req, res) => {
-  const country_code = req.query.country_code || 'US';
+  const country_code = 'IN'; 
   try {
     const response = await axios.get('https://shazam-core.p.rapidapi.com/v1/charts/country', {
       params: { country_code },
