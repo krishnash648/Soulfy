@@ -7,14 +7,6 @@ Crafted by **Krishna**, this project is all about exploring music with elegance,
 
 ---
 
-## Live Demo
-
-[https://soulfy.vercel.app/](https://soulfy.vercel.app/)
-
-> **Note:** If you are unable to see music components or data, please use your own ShazamCore API key in `proxy-server.js`.
-
----
-
 ## Screenshots
 
 ### Login Page
